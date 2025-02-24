@@ -8,7 +8,7 @@ int main() {
     float area, pib;
     int pontos_turisticos, populacao;
 
-   // Códigos para a entrada de dados 
+   // funcões de entrada de dados 
     printf("Estado: ");
     scanf("%s", estado);
 
@@ -32,7 +32,7 @@ int main() {
 
     system ("clear");
 
-   // Código para a saida de dados 
+   // funçôes de saida de dados 
     printf("Informações da Cidade:\n");
     printf("-Código da Carta: %s\n", cidade);
     printf("-Nome da Cidade: %s\n", codigo);
