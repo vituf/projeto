@@ -6,6 +6,7 @@ int main() {
     char codigo [10];
     char cidade [50];
     float area, pib;
+    float densiade, per_capita;
     int pontos_turisticos, populacao;
 
    // funcões de entrada de dados 
@@ -32,14 +33,21 @@ int main() {
 
     system ("clear");
 
+   //operacões de densidade e PIB per Capita
+   densiade = (float)populacao /  area;
+
+   per_capita = (float)populacao / pib;
+
    // funçôes de saida de dados 
     printf("Informações da Cidade:\n");
-    printf("-Código da Carta: %s\n", cidade);
-    printf("-Nome da Cidade: %s\n", codigo);
+    printf("-Código da Carta: %s\n", codigo);
+    printf("-Nome da Cidade: %s\n", cidade);
     printf("-População: %d\n", populacao);
     printf("-Área: %.3f km²\n", area);
-    printf("-PIB: %.3f bilhões de reais\n", pib);
+    printf("-PIB: %.0f bilhões de reais\n", pib);
     printf("-Numero de pontos turísticos: %d\n", pontos_turisticos);
+    printf("-Densidade Populacional: %.3f\n", densiade);
+    printf("-PIB per Capita: %.3f\n", per_capita);
 
-    return 0;
+    return 0;  
 }
